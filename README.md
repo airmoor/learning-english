@@ -6,15 +6,22 @@
 * react
 * redux
 * semantic-ui
- 
-### install dependendencies
 
-frontend: npm install
+ ### start to use
  
-backend: pipenv install --ignore-pipfile
+ pipenv install --ignore-pipfile (to install django and django-rest)
  
-### start app
+ python manage.py migrate (to create sqlite database)
+ 
+ python manage.py runserver (to run app on 8000 port)
+ 
+ 
+### start to dev
 
-frontend: npm run build
+npm install
 
-backend: py manage.py runserver
+pipenv install --ignore-pipfile
+
+npm run build
+
+py manage.py runserver
